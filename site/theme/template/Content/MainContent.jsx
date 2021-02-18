@@ -429,18 +429,19 @@ class MainContent extends Component {
     return (
       <div className="main-wrapper">
         <Row>
-          {isMobile ? (
-            <MobileMenu key="Mobile-menu" wrapperClassName="drawer-wrapper">
-              {menuChild}
-            </MobileMenu>
-          ) : (
-            <Col xxl={4} xl={5} lg={6} md={6} sm={24} xs={24} className="main-menu">
-              <Affix>
-                <section className="main-menu-inner">{menuChild}</section>
-              </Affix>
-            </Col>
-          )}
-          <Col xxl={20} xl={19} lg={18} md={18} sm={24} xs={24}>
+          {/*{isMobile ? (*/}
+          {/*  <MobileMenu key="Mobile-menu" wrapperClassName="drawer-wrapper">*/}
+          {/*    {menuChild}*/}
+          {/*  </MobileMenu>*/}
+          {/*) : (*/}
+          {/*  <Col xxl={4} xl={5} lg={6} md={6} sm={24} xs={24} className="main-menu">*/}
+          {/*    <Affix>*/}
+          {/*      <section className="main-menu-inner">{menuChild}</section>*/}
+          {/*    </Affix>*/}
+          {/*  </Col>*/}
+          {/*)}*/}
+          {/*<Col xxl={20} xl={19} lg={18} md={18} sm={24} xs={24}>*/}
+          <Col xxl={24} xl={24} lg={24} md={18} sm={24} xs={24}>
             <section className={mainContainerClass}>
               {this.renderMainContent({ theme, setIframeTheme })}
             </section>
